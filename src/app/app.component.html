@@ -1,3 +1,57 @@
+<!-- App -->
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="menu-content">
+    <!-- Left Menu -->
+    <ion-menu contentId="menu-content" side="start" type="push">
+      <div class="md ion-page">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>
+              Right Menu
+            </ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ion-list>
+            <ion-item>
+              Item 1
+            </ion-item>
+            <ion-item>
+              Item 2
+            </ion-item>
+            <ion-item>
+              Item 3
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </div>
+    </ion-menu>
+    <!-- Main content -->
+    <ion-router-outlet id="menu-content"> </ion-router-outlet>
+    <!-- Right Menu -->
+    <ion-menu contentId="menu-content" side="end" type="push">
+      <div class="md ion-page">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>
+              Right Menu
+            </ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ion-list>
+            <ion-item>
+              Item 1
+            </ion-item>
+            <ion-item>
+              Item 2
+            </ion-item>
+            <ion-item>
+              Item 3
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </div>
+    </ion-menu>
+  </ion-split-pane>
 </ion-app>
